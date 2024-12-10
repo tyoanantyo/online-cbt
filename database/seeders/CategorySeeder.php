@@ -36,6 +36,13 @@ class CategorySeeder extends Seeder
                 'updated_at' => Carbon::now(),
 
             ],
+            [
+                'name' => "Data Science",
+                'slug' => "data-science",
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+
+            ],
         ]);
     }
 }
