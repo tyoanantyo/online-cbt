@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/output.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-poppins text-[#0A090B]">
+<body class="font-inter text-[#0A090B]">
     <section id="content" class="flex">
         <div id="sidebar"
             class="w-[270px] flex flex-col shrink-0 min-h-screen justify-between p-[30px] border-r border-[#EEEEEE] bg-[#FBFBFB]">
@@ -205,7 +204,7 @@
                         <img src="{{ asset('images/icons/more.svg') }}" alt="icon">
                     </a>
                     <div
-                        class="dropdown-menu absolute hidden right-0 top-[66px] w-[270px] flex flex-col gap-4 p-5 border border-[#EEEEEE] bg-white rounded-[18px] transition-all duration-300 shadow-[0_10px_16px_0_#0A090B0D]">
+                        class="dropdown-menu absolute hidden right-0 top-[66px] w-[270px] flex-col gap-4 p-5 border border-[#EEEEEE] bg-white rounded-[18px] transition-all duration-300 shadow-[0_10px_16px_0_#0A090B0D]">
                         <a href="{{ route('dashboard.course.course_students.create', $course) }}"
                             class="flex gap-[10px] items-center">
                             <div class="w-5 h-5">
