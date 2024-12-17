@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
     <link href="{{ asset('css/output.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
@@ -165,7 +166,7 @@
                         <p class="text-[#7F8190]">Provide high quality for best students</p>
                     </div>
                     <a href="{{ route('dashboard.courses.create') }}"
-                        class="h-[52px] p-[14px_20px] bg-[#6436F1] rounded-full font-bold text-white transition-all duration-300 hover:shadow-[0_4px_15px_0_#6436F14D]">Add
+                        class="h-[52px] p-[14px_20px] bg-[#06B6D4] rounded-full font-bold text-white transition-all duration-300 hover:shadow-[0_4px_15px_0_#6436F14D]">Add
                         New Course</a>
                 </div>
             </div>

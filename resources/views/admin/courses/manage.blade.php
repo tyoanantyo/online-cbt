@@ -204,9 +204,9 @@
                         <img src="{{ asset('images/icons/more.svg') }}" alt="icon">
                     </a>
                     <div
-                        class="dropdown-menu absolute hidden right-0 top-[66px] w-[270px] flex-col gap-4 p-5 border border-[#EEEEEE] bg-white rounded-[18px] transition-all duration-300 shadow-[0_10px_16px_0_#0A090B0D]">
+                        class="dropdown-menu absolute hidden right-0 top-[66px] w-[270px] flex flex-col gap-4 p-5 border border-[#EEEEEE] bg-white rounded-[18px] transition-all duration-300 shadow-[0_10px_16px_0_#0A090B0D]">
                         <a href="{{ route('dashboard.course.course_students.create', $course) }}"
-                            class="flex gap-[10px] items-center">
+                            class="flex gap-[10px] items-center mt">
                             <div class="w-5 h-5">
                                 <img src="{{ asset('images/icons/profile-2user-outline.svg') }}" alt="icon">
                             </div>
