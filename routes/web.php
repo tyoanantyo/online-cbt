@@ -67,7 +67,7 @@ Route::middleware('auth')->group(function () {
 
         Route::post('/learning/{course}/{question}', [StudentAnswerController::class, 'store'])
             ->middleware('role:student')
-            ->name('learning.course.answer.course');
+            ->name('learning.course.answer.store');
     });
 });
 
