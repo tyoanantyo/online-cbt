@@ -9,8 +9,8 @@
                 <h3 class="font-bold text-xs text-[#A5ABB2]">DAILY USE</h3>
             </li>
             <li>
-                <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                <a href="{{ route('dashboard.courses.index') }}"
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/home-hashtag.svg') }}" alt="icon">
                     </div>
@@ -18,17 +18,17 @@
                 </a>
             </li>
             <li>
-                <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 bg-cyan-500 transition-all duration-300 hover:bg-[#2B82FE]">
+                <a href="{{ route('dashboard.courses.index') }}"
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/note-favorite.svg') }}" alt="icon">
                     </div>
-                    <p class="font-semibold text-white transition-all duration-300 hover:text-white">Courses</p>
+                    <p class="font-semibold transition-all duration-300 hover:text-white">Courses</p>
                 </a>
             </li>
             <li>
                 <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/profile-2user.svg') }}" alt="icon">
                     </div>
@@ -37,7 +37,7 @@
             </li>
             <li>
                 <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/sms-tracking.svg') }}" alt="icon">
                     </div>
@@ -49,7 +49,7 @@
             </li>
             <li>
                 <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/chart-2.svg') }}" alt="icon">
                     </div>
@@ -63,7 +63,7 @@
             </li>
             <li>
                 <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/3dcube.svg') }}" alt="icon">
                     </div>
@@ -72,7 +72,7 @@
             </li>
             <li>
                 <a href=""
-                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                    class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                     <div>
                         <img src="{{ asset('images/icons/code.svg') }}" alt="icon">
                     </div>
@@ -93,11 +93,11 @@
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit"
-                        class="p-[10px_16px] flex items-center gap-[14px] w-full rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
+                        class="p-[10px_16px] flex items-center gap-[14px] w-full rounded-full h-11 transition-all duration-300 hover:bg-cyan-500">
                         <div>
                             <img src="{{ asset('images/icons/security-safe.svg') }}" alt="icon">
                         </div>
-                        <p class="font-semibold transition-all duration-300 hover:text-white">Logout</p>
+                        <p class="font-semibold transition-all duration-300">Logout</p>
                     </button>
                 </form>
             </li>

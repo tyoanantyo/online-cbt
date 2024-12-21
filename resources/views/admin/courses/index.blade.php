@@ -1,12 +1,6 @@
 <!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
-</head>
+<x-script></x-script>
 
 <body class="font-inter text-[#0A090B]">
     <section id="content" class="flex">
@@ -14,7 +8,9 @@
         <x-sidebar></x-sidebar>
 
         <div id="menu-content" class="flex flex-col w-full pb-[30px]">
+
             <x-profile></x-profile>
+
             <div class="flex flex-col px-5 mt-5">
                 <div class="w-full flex justify-between items-center">
                     <div class="flex flex-col gap-1">
@@ -86,7 +82,7 @@
                                     class="menu-dropdown w-[120px] max-h-[41px] overflow-hidden absolute top-0 p-[10px_16px] bg-white flex flex-col gap-3 border border-[#EEEEEE] transition-all duration-300 hover:shadow-[0_10px_16px_0_#0A090B0D] rounded-[18px]">
                                     <button onclick="toggleMaxHeight(this)"
                                         class="flex items-center justify-between font-bold text-sm w-full">
-                                        menu
+                                        Menu
                                         <img src="{{ asset('images/icons/arrow-down.svg') }}" alt="icon">
                                     </button>
                                     <a href="{{ route('dashboard.courses.show', $course) }}"
