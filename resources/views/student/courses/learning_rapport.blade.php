@@ -11,109 +11,7 @@
 
 <body class="font-inter text-[#0A090B]">
     <section id="content" class="flex">
-        <div id="sidebar"
-            class="w-[270px] flex flex-col shrink-0 min-h-screen justify-between p-[30px] border-r border-[#EEEEEE] bg-[#FBFBFB]">
-            <div class="w-full flex flex-col gap-[30px]">
-                <a href="index.html" class="flex items-center justify-center">
-                    <img src="{{ asset('images/logo/logo.svg') }}" alt="logo">
-                </a>
-                <ul class="flex flex-col gap-3">
-                    <li>
-                        <h3 class="font-bold text-xs text-[#A5ABB2]">DAILY USE</h3>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/home-hashtag.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Overview</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 bg-[#2B82FE] transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/note-favorite.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold text-white transition-all duration-300 hover:text-white">Courses</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/crown.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Certificates</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/sms-tracking.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Messages</p>
-                            <div
-                                class="notif w-5 h-5 flex shrink-0 rounded-full items-center justify-center bg-[#F6770B]">
-                                <p class="font-bold text-[10px] leading-[15px] text-white">12</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/profile-2user.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Portfolio</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="flex flex-col gap-3">
-                    <li>
-                        <h3 class="font-bold text-xs text-[#A5ABB2]">OTHERS</h3>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/3dcube.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Rewards</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/code.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">A.I Plugins</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/setting-2.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Settings</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="signin.html"
-                            class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#2B82FE]">
-                            <div>
-                                <img src="{{ asset('images/icons/security-safe.svg') }}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Logout</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <x-sidebar></x-sidebar>
         <div id="menu-content" class="flex flex-col w-full pb-[30px]">
             <div class="nav flex justify-between p-5 border-b border-[#EEEEEE]">
                 <form
@@ -140,7 +38,7 @@
                     <div class="flex gap-3 items-center">
                         <div class="flex flex-col text-right">
                             <p class="text-sm text-[#7F8190]">Howdy</p>
-                            <p class="font-semibold">Bondan Poro</p>
+                            <p class="font-semibold">{{ Auth::user()->name }}</p>
                         </div>
                         <div class="w-[46px] h-[46px]">
                             <img src="{{ asset('images/photos/default-photo.svg') }}" alt="photo">

@@ -61,7 +61,7 @@ class LearningController extends Controller
         ]);
     }
 
-    public function leaning_finish(Course $course)
+    public function learning_finished(Course $course)
     {
         return view('student.courses.learning_finished', [
             'course' => $course,
